@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:uimodel/body/widget.dart';
+import 'package:uimodel/home/homepage.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -16,7 +17,10 @@ class Body extends StatelessWidget {
                 minWidth: 20,
                 padding: EdgeInsets.only(left: 2),
                 child: Icon(Icons.arrow_back),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => HomePage()));
+                },
               ),
             ),
             Container(
@@ -243,8 +247,8 @@ class Body extends StatelessWidget {
                                       height: 35,
                                       width: 70,
                                       decoration: BoxDecoration(
-                                          border:
-                                              Border.all(color: Colors.black)),
+                                          border: Border.all(
+                                              color: Colors.black26)),
                                       child: Row(
                                         children: [
                                           GestureDetector(
