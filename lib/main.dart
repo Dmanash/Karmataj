@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:uimodel/body/widget.dart';
-import 'package:uimodel/home/homepage.dart';
 
 import 'body/body.dart';
 
