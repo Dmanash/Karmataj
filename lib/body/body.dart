@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:uimodel/body/widget.dart';
+import 'package:uimodel/body/product.dart';
 import 'package:uimodel/home/homepage.dart';
 
 class Body extends StatelessWidget {
@@ -292,9 +292,21 @@ class Body extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              CustomLast(),
-                              CustomLast2(),
-                              CustomLast3(),
+                              Product(
+                                productName: 'ABC',
+                                productImage: 'assets/images/Item1.png',
+                                price: 500,
+                              ),
+                              Product(
+                                productName: 'XYZ',
+                                productImage: 'assets/images/Item2.png',
+                                price: 9800,
+                              ),
+                              Product(
+                                productName: 'LMN',
+                                productImage: 'assets/images/Item3.png',
+                                price: 99.99,
+                              ),
                             ],
                           ),
                         ),
