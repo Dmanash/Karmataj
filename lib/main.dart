@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:uimodel/body/widget.dart';
+import 'package:uimodel/home/homepage.dart';
+import 'package:uimodel/pages/finalPage.dart';
 
 import 'body/body.dart';
 
@@ -11,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Body(),
+      home: FinalPage(),
     );
   }
 }
